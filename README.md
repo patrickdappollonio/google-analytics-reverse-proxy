@@ -1,5 +1,7 @@
 # Google Analytics Reverse Proxy for ad blockers
 
+> Try not to hate me for making it public, but I needed a quick proof of concept and this is what I could came up with 😅
+
 This is a simple reverse proxy implemented in Cloudflare Workers (the free tier is enough) which will allow you to use the Google Analytics `analytics.js` code in your website and still track visits, since having a new domain breaks most of the ad blockers out there.
 
 Additionally, it rewrites the Javascript script so the URL is different, since having a URL called `https://example.com/analytics.js` will definitely be blocked, so here it's renamed to `/gtga` which will proxy the call to Google Analytics Javascript file and bring it back.
@@ -32,4 +34,4 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 ```
 
-The code is in [`worker.js`](worker.js)
+The code is in [`worker-code.js`](worker-code.js). 
