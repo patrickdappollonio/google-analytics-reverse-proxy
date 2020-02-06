@@ -4,9 +4,9 @@ addEventListener("fetch", event => {
 
 async function handleRequest(request) {
   switch (new URL(request.url).pathname) {
+    case "/r/rr":
     case "/rr":
       return await doProxy(request)
-      break;
     case "/gtga":
       return await doJSFile(request)
     default:
@@ -52,6 +52,7 @@ async function doProxy(request) {
   let newURL = new URL(request.url)
   newURL.hostname = newHostname
   newURL.pathname = "/collect"
+  newURL.searchParams.set("uip", ipaddress)
 
   // Duplicate the request, but changing the URL endpoint
   let proxy = new Request(newURL, request)
