@@ -31,3 +31,5 @@ ga('send', 'pageview');
 <script async src='https://your-worker.your-name.workers.dev/gtga'></script>
 <!-- End Google Analytics -->
 ```
+
+The code is in [`worker.js`](worker.js)
