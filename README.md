@@ -34,4 +34,4 @@ ga('send', 'pageview');
 <!-- End Google Analytics -->
 ```
 
-The code is in [`worker-code.js`](worker-code.js). 
+The code is in [`worker-code.js`](worker-code.js).

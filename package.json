@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "e",
+  "version": "1.0.0",
+  "description": "This is a simple reverse proxy implemented in Cloudflare Workers (the free tier is enough) which will allow you to use the Google Analytics code in your website and still track visits, since having a new domain breaks most of the ad blockers out there.",
+  "main": "worker-code.js",
+  "author": "Patrick  D'appollonio",
+  "license": "MIT"
+}
